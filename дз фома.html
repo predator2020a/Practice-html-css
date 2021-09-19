@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Заявка</title> 
+	</head>
+	<body>
+		<header>
+			<h1>Отправка заявки на конференцию</h1>
+            <h2>Основные данные</h2>
+            <h3>*Фамилия, имя, отчество:</h3>
+				<input type="text" size="60" name="">
+        </header>
+        <main>
+            <h3>Дата рождения:</h3>
+        		<input type="date"  maxlength="8" type="text" size="35" name="">	
+        	<h3>Пол:</h3>
+        	    <input type="radio" name="sss">&nbsp;мужской  &nbsp;
+        	    <input type="radio" name="sss">&nbsp;женский<br><br>
+        	<h2>Данные для создания личного кабинета</h2>
+        	<h3>*Адрес электронной почты: </h3>
+        	    <input type="email" size="60">
+        	<h3>*Пароль для создания личного кабинета: </h3>
+        	    <input type="password" size="60">
+        	<h3>*Подтверждение пароля: </h3>
+        	    <input type="password" size="60">
+        	<h2>Материалы для конференции</h2>
+        	<h3>*Тема доклада: </h3>
+        	    <input type="text" size="60" name="">
+        	<h3>*Тезисы доклада(не более 1000 символов): </h3>
+
+        	<textarea maxlength="1000" cols="60" rows="10" wrap="hard">
+        		</textarea><br><br>
+            <h3>Файл презинтации: </h3>
+                <input type="file" name="">
+            <h2>Дополнительные опции</h2>
+                <input id="dontSend" type="checkbox">&nbsp;
+        	<label for="dontSend">Проживание в отеле</label> <br>
+        	   <input id="dontSen" checked type="checkbox">&nbsp;
+        	<label for="dontSen">Завтрак</label><br>
+        	   <input id="dontSe" type="checkbox">&nbsp;
+        	<label for="dontSe">Обед</label><br>
+        	   <input id="dontS" type="checkbox">&nbsp;
+        	<label for="dontS">Ужин</label><br> 
+        	<hr>
+        	    <input type="submit" name="" value="Отправить">
+        	<hr>
+            </main>
+            <footer>
+            	<h5>*Поля, отмеченные звёздочкой, являються обязательными для заполнения</h5>
+            </footer>
+	</body>
+</html>

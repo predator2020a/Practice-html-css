@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Рабочая страница</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Основные HTML- тэги</a></li>
+			    <li><a href="#form">Тэги полей и элементов управления форм</a></li>
+			    <li><a href="#tables">Тэги для верстки таблиц</a></li>
+		</ul>
+		</nav>
+		<hr>
+	</header>
+	<main>
+		<h1>Основные HTML- тэги</h1>
+		<b>Lorem Ipsum</b> is simply <strong> dummy text of the printing</strong> and typesetting industry. <u>Lorem Ipsum has been the industry's</u> 
+		<i>standard dummy text ever</i> since the 1500s,<s> when an unknown</s> printer took a galley of type and <br>scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+		<ol>
+		<li> Первый пункт</li>	
+		<li> Второй пункт</li>	
+		</ol>
+        <img src="computer.jpg" width="250" height="250" usemap="#computer">
+        <map name="computer">
+        	<area shape="rect" coords="150, 50, 190, 90" href="https://www.microsoft.com/uk-ua/windows" title="Перейти на сайт Виндоус" target="_blank">
+        </map>
+        <h2 id="form">Тэги полей и элементов управления форм</h2>
+        <form>
+        	<input placeholder="Год вашего рождения" maxlength="4" type="text" size="50" name="">
+        	
+        	<input type="button" disabled="disabled" name="" value="Кнопка">
+        	<button> <img src="computer.jpg" width="10"> </button>
+        	<br><br>
+        	<textarea readonly="readonly" placeholder="наша ваша" cols="30" rows="5"></textarea><br><br>
+        	<select>
+        		<option>Выберете цвет</option>
+        		<optgroup label="три цвета">
+        		<option>Красный</option>
+        		<option>Желтый</option>
+        		<option>Синий</option>
+        		</optgroup>
+        		<option>Зеленый</option>
+        		<option>Черный</option>
+        		<option>Белый</option>
+        	</select><br><br>
+
+        	<input id="dontSend" checked type="checkbox">&nbsp;
+        	<label for="dontSend">не присылать мне рекламные письма</label><br><br> 
+
+        	<input type="radio" name="sss">&nbsp;да<br>
+        	<input type="radio" name="sss">&nbsp;нет<br><br>
+
+        	<input type="file" name=""><br><br>
+
+        	<input type="password"><br><br>
+
+            <input type="email"><br><br>
+
+        	<hr><br>
+            <input type="submit" name="" value="далее"><br><br>
+        </form>
+        <h2 id="tables">Тэги для верстки таблиц</h2>
+        <table border="1" cellspacing="0" cellpadding="10">
+        	<tr>
+        		<th>Заголовок 1</th>
+        		<th>Заголовок 2</th>
+        		<th>Заголовок 3</th>
+        	</tr>
+        	<tr>
+        		<td>первая ячейка</td>
+        		<td>вторая ячейка</td>
+        		<td rowspan="2">третья ячейка</td>
+        	</tr>
+        	<tr>
+        		<td colspan="2">четвертая ячейка</td>
+        	</tr>
+
+        </table> <br><br>
+
+        <table width="100%" border="1" cellspacing="0" cellpadding="10">
+        	<tr>
+        		<td colspan="3">Хэдер сайта</td>
+        	</tr>
+                <td width="50">Левая колон каколонкаколон каколонкаколо нкаколонкако л онкаколон каколонка колонкак олонкаколонкаколонкак  олонкаколонка колонкаколон каколонк акол онкаколонкак олонка</td>
+                <td valign="top">Центральная колонка</td>
+                <td width="50">Правая колонка</td>
+            <tr>
+        		<td colspan="3">футер сайта</td>
+        	</tr>
+        </table>
+
+	</main>
+	<footer>
+		
+	</footer>
+
+</body>
+</html>
