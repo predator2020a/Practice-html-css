@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ХУЮБИКИ</title>
+</head>
+<body>
+    <style> 
+html, body {
+	margin: 0px;
+    padding: 0px;
+}
+.fixed-container {
+	width: 1000px;
+    margin: 0 auto;
+    position: relative;
+} 
+/* Центральная колонка */		
+#column-center {
+	width: 670px;
+	float: left;
+}
+/* Верхний кубик */	
+.top-row {
+    width: 670px;
+    height: 224px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+/* Нижний кубик 1 */	
+.bottom-row1 {
+    width: 670px;
+    height: 224px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+/* Нижний кубик 2 */	
+.bottom-row2 {
+    width: 670px;
+    height: 224px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+/*Основные параметры*/  
+.cube {
+    list-style: none;
+    padding: 20px;
+    border: 10px solid black;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    display: inline-flex;
+    vertical-align: top;
+    margin: 10px;
+}
+.dot::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+}
+/*Первый кубик*/
+.dice_one {
+    justify-content: center;
+    align-items: center;
+}
+/*Второй кубик*/
+.dice_two {
+    justify-content: space-between;  
+}
+.dice_two .dot:nth-child(1) {
+    align-self: flex-end;
+}
+/*Третий кубик*/
+.dice_three {
+    justify-content: space-between;
+}
+.dice_three .dot:nth-child(1) {
+    align-self: flex-end;
+}
+.dice_three .dot:nth-child(2) {
+    align-self: center;
+}
+/*Четвертый кубик*/
+.dice_four {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.dice_four .dot {
+    width: 50%;
+}
+.dice_four .dot:nth-child(even) {
+    text-align: right;
+}
+/*Пятый кубик*/
+.dice_five {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.dice_five .dot:nth-child(3) {
+    width: 100%;
+    text-align: center;
+}
+/*Шестой кубик*/
+.dice_six {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+}
+    </style>
+<div class="fixed-container">
+ <div id="column-center">
+      <!-- Кубик с 6 -->
+    <div class="top-row">
+    <div class="cube dice_six">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    </div>
+    <!-- Кубик с 2 -->
+    <div class="cube dice_two">
+        <div class="dot"></div>
+        <div class="dot"></div>
+   </div>
+   <!-- Кубик с 5 -->
+   <div class="cube dice_five">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    </div>
+    <!-- Кубик с 3 -->
+    <div class="cube dice_three">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <!-- Кубик с 4 -->
+    <div class="bottom-row1">
+    <div class="cube dice_four">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    </div>
+    <!-- Кубик с 1 -->
+    <div class="bottom-row2">
+	<div class="cube dice_one">
+         <div class="dot"></div>
+    </div>
+    </div>
+    </div>
+ </div> 
+</div>
+</div>
+</body>
+</html>
